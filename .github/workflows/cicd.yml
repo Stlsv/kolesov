@@ -62,7 +62,7 @@ jobs:
           key: ${{ secrets.KEY }}
           passphrase: ${{ secrets.PASSPHRASE }}
           script: |
-          cd $HOME
+            cd $HOME
             docker compose down
             docker pull ghcr.io/${{ github.repository }}:main
             docker compose up -d
